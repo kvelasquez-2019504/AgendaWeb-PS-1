@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/css-index.css">
     <title>Login</title>
 </head>
 <body>
@@ -11,21 +12,22 @@
             <div class="row justify-content-center align-items-center">
                 <div class="w-50 text-center">
                     <h1>BIENVENIDOS</h1>
-                    <img src="./assets/resources/img/Imagen Login.png" alt="">
-                    <form action="" class="form-control">
+                    <img src="./assets/resources/img/Imagen Login.png" class="w-50" id="imagen-Usuario" alt="">
+                    <div class="form-control">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="txtUser" placeholder="user@gmail.com">
                             <label for="txtUser">Ingrese su usario</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="txtPassword" placeholder="user@gmail.com">
+                            <input type="password" class="form-control" id="txtPassword" placeholder="Password">
                             <label for="txtPassword">Ingrese contraseña</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-                    </form>
+                        <button type="submit" class="btn btn-primary" onclick="iniciarSesion()">Iniciar sesión</button>
+                    </div>
                 </div>
             </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/script-index.js"></script>
 </body>
 </html>
