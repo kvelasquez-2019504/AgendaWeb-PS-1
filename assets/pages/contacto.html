@@ -14,7 +14,7 @@
     <div class="bg-dark m-4">
         <div class="row">
             <H1 class="h1 text-bg-danger text-center col m-0 p-0">Tus Contactos</H1>
-            <button class="btn btn-dark col-sm-3 m-0 p-0">Sobre mí <img src="../resources/img/Imagen Login.png" width="45px" alt=""></button>
+            <button class="btn btn-dark col-sm-3 m-0 p-0">Mi cuenta <img src="../resources/img/Imagen Login.png" width="45px" alt=""></button>
         </div>
         <table class="table table-dark table-hover text-center" id="tblContacto">
             <thead>
@@ -34,46 +34,68 @@
                     <td>Velásquez</td>
                     <td>Kenyvel</td>
                     <td>54129568</td>
-                    <td><button class="btn btn-primary">VER MÁS</button></td>
+                    <td><button class="btn btn-primary">
+                        <div data-bs-toggle="modal" data-bs-target="#contacto-1">
+                            VER MÁS
+                        </div>
+                    </button></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Kenneth</td>
-                    <td>Velásquez</td>
-                    <td>Kenyvel</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>El risas</td>
                     <td>85489578</td>
                     <td><button class="btn btn-primary">VER MÁS</button></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Kenneth</td>
-                    <td>Velásquez</td>
-                    <td>Kenyvel</td>
+                    <td>María</td>
+                    <td>Gonzáles</td>
+                    <td>Marianita la marcianita</td>
                     <td>12548565</td>
                     <td><button class="btn btn-primary">VER MÁS</button></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Kenneth</td>
-                    <td>Velásquez</td>
-                    <td>Kenyvel</td>
+                    <td>Laura</td>
+                    <td>Sánchez</td>
+                    <td>Laurita</td>
                     <td>35968471</td>
                     <td><button class="btn btn-primary">VER MÁS</button></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>Kenneth</td>
-                    <td>Velásquez</td>
-                    <td>Kenyvel</td>
+                    <td>Pedro</td>
+                    <td>Medina</td>
+                    <td>Pepe</td>
                     <td>50179852</td>
                     <td><button class="btn btn-primary">VER MÁS</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div>
-        <button class="btn btn-outline-info">NUEVO CONTACTO</button>
-        <button class="btn btn-outline-warning w-25">FAVORITOS</button>
+    <div class="modal fade" id="contacto-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lblContacto1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="lblContacto1">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="text-center w-100">
+        <button class="btn btn-outline-info">NUEVO CONTACTO <img src="../resources/img/plus.png" alt="" width="20px" height="20px" class="img-fluid"></button>
+        <button class="btn btn-outline-warning">FAVORITOS <img src="../resources/img/favorito.png" width="20px" height="20px" class="img-fluid" alt=""></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
