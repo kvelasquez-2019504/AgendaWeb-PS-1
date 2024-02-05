@@ -19,12 +19,31 @@
                     <H1 class="h1 m-0">Tus Contactos</H1>
                 </div>
                 <div class="col align-items-center m-0">
-                    <button class="btn btn-dark">Mi cuenta <img src="../resources/img/Imagen Login.png" width="45px"
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#perfil" onclick="perfil()">Mi cuenta <img src="../resources/img/Imagen Login.png" width="45px"
                             alt=""></button>
                 </div>
             </div>
         </div>
-
+        <div class="modal fade" id="perfil" tabindex="-1" aria-labelledby="lblPerfil" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-2" id="lblPerfil">¡¡BIENVENIDO <span class="text-info-emphasis" id="user"></span>!!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <table>
+                        <tr>
+                            <th>Contraseña:</th>
+                            <td><span id="password"></span></td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         <table class="table table-dark table-hover text-center" id="tblContacto">
             <thead>
                 <tr>

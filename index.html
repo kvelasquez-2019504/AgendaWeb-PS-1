@@ -25,18 +25,17 @@
                         <input type="password" class="form-control" id="txtPassword" placeholder="Password">
                         <label for="txtPassword">Ingrese contraseña</label>
                     </div>
-                    <button type="submit" class="btn btn-primary" onclick="iniciarSesion()">Iniciar sesión</button>
-                    <button type="submit" class="btn btn-success" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Crear cuenta</button>
+                    <button type="submit" class="btn btn-primary" onclick="iniciarSesion()">Iniciar sesión</button><hr>
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#crear-cuenta">Crear cuenta</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="crear-cuenta" tabindex="-1" aria-labelledby="lblCuenta" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5 text-black" id="lblCuenta">Crear cuenta</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -46,7 +45,7 @@
                     </div>
                     <div class="row m-sm-2 justify-content-center align-items-center">
                         <label class="col" for="clave">Contraseña:</label>
-                        <input class="col form-control" type="text" id="clave" name="clave" required>
+                        <input class="col form-control" type="password" id="clave" name="clave" required>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -6,15 +6,14 @@ let contador =0;
 function guardarCuenta(){
     let user = document.getElementById("usuario").value;
     let password = document.getElementById("clave").value;
-    console.log(user,password);
     listaRegistro.push({nombre:user,clave:password});
-    console.log(listaRegistro);
+    alert("Se ha creado su cuenta");
 }
 
 function verificacion(persona){
     if(usuario == persona.nombre&&persona.clave==clave){
         localStorage.setItem("usuario", usuario);
-        localStorage.setItem("contrasena", clave);
+        localStorage.setItem("password", clave);
         document.location.href ="./assets/pages/contacto.html";
     }else{
         contador++;
