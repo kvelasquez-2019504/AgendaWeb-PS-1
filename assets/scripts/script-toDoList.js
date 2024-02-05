@@ -27,7 +27,6 @@ function modificarTarea(){
 
 function eliminarTarea(tarea) {
     var opcion = prompt("¿Está seguro de eliminar?\nY/N");
-    console.log(opcion);
     if(opcion.toUpperCase()=="Y"){
         var eliminarFila = tarea.parentNode.parentNode;
         eliminarFila.parentNode.removeChild(eliminarFila);
